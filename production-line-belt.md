@@ -15,11 +15,14 @@ This PLC system consists of the following hardware:
 
 ![ACIM_Setup](https://github.com/user-attachments/assets/7a3474bb-a8ff-4f30-a2b6-0c59f0caaa18)
 
-## Project Description
+# Project Description
 
-The system feeds boxes to three out-feed lines in sequential order. The number of boxes moved to each line is pre-determined.
+## Infeed
+
+At the top of the line, a pneumatic feeder output is toggled at a specified frequency and feeds boxes to the moving belt.
 
 https://github.com/user-attachments/assets/a8249a3a-254c-40e7-ab4d-80ad37c51a1e
 
-
+The feeder is controlled by a Subroutine within the programmed state machine.
+[feederPulse_SBR.pdf](https://github.com/user-attachments/files/22988367/feederPulse_SBR.pdf)
 
