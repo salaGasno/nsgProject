@@ -1,6 +1,6 @@
 # Production Line Conveyor-belt Introduction
 
-This project consists of a PLC system utilizing a state machine to control a conveyor-belt and several pneumatic outputs.
+This project consists of a PLC system utilizing a finite state machine (FSM) to control a conveyor-belt and several pneumatic outputs.
 
 This project was completed at the Automated Controls Installation and Maintenance program in BCIT during the PLCs course, ACIM-5010.
 
