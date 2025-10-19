@@ -9,9 +9,9 @@ This course served as an introduction to PLC systems. However, as a Mechatronics
 ## System Components
 
 This PLC system consists of the following hardware:
--1769-L30 Allen Bradley PLC
--PowerFlex 70 EC_I
--Conveyor Belt System Provided by the ACIM program.
+* 1769-L30 Allen Bradley PLC
+* PowerFlex 70 EC_I
+* Conveyor Belt System Provided by the ACIM program.
 
 ![ACIM_Setup](https://github.com/user-attachments/assets/7a3474bb-a8ff-4f30-a2b6-0c59f0caaa18)
 
