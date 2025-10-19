@@ -15,3 +15,11 @@ This PLC system consists of the following hardware:
 
 ![ACIM_Setup](https://github.com/user-attachments/assets/7a3474bb-a8ff-4f30-a2b6-0c59f0caaa18)
 
+## Project Description
+
+The system feeds boxes to three out-feed lines in sequential order. The number of boxes moved to each line is pre-determined.
+
+https://github.com/user-attachments/assets/a8249a3a-254c-40e7-ab4d-80ad37c51a1e
+
+
+
