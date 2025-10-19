@@ -1,4 +1,4 @@
-#Production Line Conveyor-belt Introduction
+# Production Line Conveyor-belt Introduction
 
 This project consists of a PLC system utilizing a state machine to control a conveyor-belt
 and several pneumatic outputs.
@@ -11,7 +11,7 @@ most of the topics covered in this course were known to me. As a result of this,
 to create the following PLC system utilizing a state machine where one was not required to
 complete the project.
 
-##System Components
+## System Components
 
 This PLC system consists of the following hardware:
 -1769-L30 Allen Bradley PLC
