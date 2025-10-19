@@ -8,7 +8,7 @@ This course served as an introduction to PLC systems. However, as a Mechatronics
 
 ## System Components
 
-This PLC system consists of the following hardware:
+This PLC system consists of the following components:
 * 1769-L30 Allen Bradley PLC
 * PowerFlex 70 EC_I
 * Conveyor Belt System Provided by the ACIM program.
@@ -29,7 +29,7 @@ The feeder is controlled by a Subroutine within the programmed finite state mach
 The Subroutine involves simple toggling logic and can be fully shown here.
 <img width="1052" height="517" alt="image" src="https://github.com/user-attachments/assets/3caedaf9-042b-4212-9a71-a7fc1d9347e7" />
 
-## Line Servicing and Outfeed
+## Line Service
 
 The state machine controls the moving platform depending on a sensory input and feeds boxes in a pre-determined fashion from left to right.
 
