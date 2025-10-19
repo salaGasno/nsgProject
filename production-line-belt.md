@@ -18,4 +18,7 @@ This PLC system consists of the following hardware:
 -PowerFlex 70 EC_I
 -Conveyor Belt System Provided by the ACIM program.
 
+![ACIM_Setup](https://github.com/user-attachments/assets/7a3474bb-a8ff-4f30-a2b6-0c59f0caaa18)
+
+
 
