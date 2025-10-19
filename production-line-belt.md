@@ -14,6 +14,4 @@ This PLC system consists of the following hardware:
 * Conveyor Belt System Provided by the ACIM program.
 
 ![ACIM_Setup](https://github.com/user-attachments/assets/7a3474bb-a8ff-4f30-a2b6-0c59f0caaa18)
-Figure 1: Automated Controls Installation & Maintenance (ACIM) Conveyor Belt Set-up.
-
 
