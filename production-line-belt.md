@@ -56,9 +56,22 @@ The following describes the state machine sequence, a few subroutines and a bonu
 
 ## Finite State Machine
 
+The finite state machine will be discussed and can be found here. [ConveyorBelt_FSM.pdf](https://github.com/user-attachments/files/22994410/ConveyorBelt_FSM.pdf)
+
 The state machine consists of 9 states it can transition to. Below is a rough sketch of the state diagram.
 <img width="440" height="328" alt="stateDiagram0" src="https://github.com/user-attachments/assets/40aa792d-2a3f-4b7a-9464-d2ab5947cccf" />
 
+## State 100 - E-STATE
+
+The emergency state is entered from almost any other state as the rung for it is scanned asynchronously from the state machine.
+<img width="1053" height="155" alt="image" src="https://github.com/user-attachments/assets/456fa9d9-b6b8-4574-956c-4384bc1c7391" />
+This state can be exited through the unlatching of the emergency stop button followed by a sequence of button presses within an aloted time.
+<img width="1052" height="295" alt="image" src="https://github.com/user-attachments/assets/2bc004b8-5d79-4de9-8088-32e46c24fc82" />
+
+## State 0 - IDLE
+
+This state is entered through the first scan status bit and is the starting point of the state machine.
+During this state, the green light flashes to indicate that the system is ready. The state is exited via the press of the green pushbutton.
 
 
 
