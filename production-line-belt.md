@@ -4,7 +4,7 @@ This programming project consists of a PLC system utilizing a finite state machi
 
 This project was completed at the Automated Controls Installation and Maintenance program in BCIT during the PLCs course, ACIM-5010.
 
-This course served as an introduction to PLC systems. However, as a Mechatronics Technologist most of the topics covered in this course were known to me. As a result, I had decided to create the following PLC system project utilizing a state machine even though one was not required for the course.
+This course served as an introduction to PLC systems. However, as a mechatronics technologist, most of the topics covered in this course were known to me. As a result, I had decided to create the following PLC system project utilizing a state machine even though one was not required for the course.
 
 Date completed: September 7th, 2025.
 Project duration: < 1 Month.
