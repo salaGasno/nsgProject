@@ -111,4 +111,7 @@ The program will loop from state 3 - 5 if there is no intervention from an opera
 * Once the final state for line-servicing is reached the flag is checked. If false, the next state will be state 3 and the process will restart.
 * If it is true, however, the state will reset back to idling, state 0.
 <img width="923" height="420" alt="image" src="https://github.com/user-attachments/assets/2516da61-0f40-4308-8a44-eba46cd0307f" />
+* Every time State 0 is entered, the soft stop flag is cleared to ensure normal operation.
+<img width="927" height="99" alt="image" src="https://github.com/user-attachments/assets/a368ad00-502b-463e-a9e0-de857256b26f" />
+
 
