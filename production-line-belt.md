@@ -33,9 +33,7 @@ The state machine controls the moving platform depending on a sensory input and 
 
 https://github.com/user-attachments/assets/62355579-662a-4570-8a21-ec45b6ff8299
 
-The cradle/platform is controlled by yet another subroutine within the state machine. 
-
-The process repeats indefinitely unless a red button is pressed. If this button is pressed, the line will service all three lines before coming to a soft stop. If the emergency stop is pressed, the e-stop button will need to be unlatched and a button sequence must be executed to resume normal function.
+The process repeats indefinitely unless a red button is pressed. If this button is pressed, the line will finish servicing all three lines before coming to a halt. If the emergency stop is pressed, the e-stop button will need to be unlatched and a button sequence must be executed to resume normal function.
 
 https://github.com/user-attachments/assets/adb6910d-be34-4707-b5a2-671e6af394ea
 
@@ -113,5 +111,15 @@ The program will loop from state 3 - 5 if there is no intervention from an opera
 <img width="923" height="420" alt="image" src="https://github.com/user-attachments/assets/2516da61-0f40-4308-8a44-eba46cd0307f" />
 * Every time State 0 is entered, the soft stop flag is cleared to ensure normal operation.
 <img width="927" height="99" alt="image" src="https://github.com/user-attachments/assets/a368ad00-502b-463e-a9e0-de857256b26f" />
+
+This creates the soft-stop feature required for the project.
+
+## Pause feature
+
+The pause feature was not a requirement and was included at my leisure. The implementation is simple and has little implication on the rest of the system.
+
+* Pressing the yellow pushbutton stores the current state in a buffer. Since the counters are not reset, pausing does not affect the counters responsible for keeping track of the output.
+<img width="924" height="261" alt="image" src="https://github.com/user-attachments/assets/5bac4d6c-0fdc-4665-99f6-ce2d6150c60f" />
+
 
 
