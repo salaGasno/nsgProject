@@ -78,3 +78,20 @@ During this state, the green light flashes to indicate that the system is ready.
 This state resets counters involved with the line servicing function of the program and a timer involved with safely restarting the system after an e-stop. The green light will cease to toggle and will be continuously energized when this state is entered and will remain until the yellow button is pressed and the conveyor belt's desired speed is reached.
 <img width="1057" height="185" alt="image" src="https://github.com/user-attachments/assets/f7b93263-d15f-47e1-92ac-7bf8c3ee8741" />
 
+## State 2 - INITIALIZE VFD
+
+This state is reached after pressing the yellow pushbutton. This state energizes the green light and continuously toggles the amber light to indicate that the VFD is energizing the conveyor belt motor and its speed is being monitored.
+<img width="1262" height="130" alt="image" src="https://github.com/user-attachments/assets/73a1210d-802c-475d-a1f0-550fcedc0b63" />
+This state will energize two pins on the VFD, the stop (active-low) and start (active-high) pins. This starts the motor.
+Once the motor reaches the desired speed, a transition occurs and the green light is de-energized at the time the amber light is energized.
+
+## State 3 - LINE 1 SERVICE
+
+This state services the first line of production. 
+<img width="1262" height="273" alt="image" src="https://github.com/user-attachments/assets/094c5529-d417-4987-9e2e-e51cf2555ca7" />
+This state calls two subroutines that energize the box feeder, and the ram system.
+<img width="929" height="116" alt="image" src="https://github.com/user-attachments/assets/5d7b72d2-70c0-4aa2-a917-1d68e0d136bc" />
+<img width="923" height="97" alt="image" src="https://github.com/user-attachments/assets/a174ae15-3dbb-4f8d-b50f-b019a210f4ec" />
+
+
+
