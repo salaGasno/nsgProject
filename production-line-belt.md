@@ -46,7 +46,12 @@ This subroutine can be briefly described as multiple cascading, latching timers 
 <img width="1053" height="460" alt="image" src="https://github.com/user-attachments/assets/dfc8d7c5-e17b-4df4-a23f-302ea559bb71" />
 
 The process repeats indefinitely unless a red button is pressed. If this button is pressed, the line will service all three lines before coming to a soft stop. If the emergency stop is pressed, the e-stop button will need to be unlatched and a button sequence must be executed to resume normal function.
-https://github.com/user-attachments/assets/c9eb5f9b-b58b-4735-9fae-7a7d01cd711a
+
+
+
+
+https://github.com/user-attachments/assets/adb6910d-be34-4707-b5a2-671e6af394ea
+
 
 
 
