@@ -27,12 +27,6 @@ At the top of the line, a pneumatic feeder output is toggled at a specified freq
 
 https://github.com/user-attachments/assets/a8249a3a-254c-40e7-ab4d-80ad37c51a1e
 
-The feeder is controlled by a Subroutine within the programmed finite state machine.
-[feederPulse_SBR.pdf](https://github.com/user-attachments/files/22988367/feederPulse_SBR.pdf)
-
-The Subroutine involves simple toggling logic and can be fully shown here.
-<img width="1052" height="517" alt="image" src="https://github.com/user-attachments/assets/3caedaf9-042b-4212-9a71-a7fc1d9347e7" />
-
 ## Line Service
 
 The state machine controls the moving platform depending on a sensory input and feeds boxes in a pre-determined fashion from left to right.
@@ -40,10 +34,6 @@ The state machine controls the moving platform depending on a sensory input and 
 https://github.com/user-attachments/assets/62355579-662a-4570-8a21-ec45b6ff8299
 
 The cradle/platform is controlled by yet another subroutine within the state machine. 
-[lineLoad_SBR.pdf](https://github.com/user-attachments/files/22988379/lineLoad_SBR.pdf)
-
-This subroutine can be briefly described as multiple cascading, latching timers that determine the time it takes for each actuator to energize. Below is a piece of the program, the full program can be obtained above.
-<img width="1053" height="460" alt="image" src="https://github.com/user-attachments/assets/dfc8d7c5-e17b-4df4-a23f-302ea559bb71" />
 
 The process repeats indefinitely unless a red button is pressed. If this button is pressed, the line will service all three lines before coming to a soft stop. If the emergency stop is pressed, the e-stop button will need to be unlatched and a button sequence must be executed to resume normal function.
 
@@ -93,9 +83,15 @@ This state calls two subroutines that energize the box feeder, and the ram syste
 <img width="929" height="116" alt="image" src="https://github.com/user-attachments/assets/5d7b72d2-70c0-4aa2-a917-1d68e0d136bc" />
 <img width="923" height="97" alt="image" src="https://github.com/user-attachments/assets/a174ae15-3dbb-4f8d-b50f-b019a210f4ec" />
 
+The Subroutine involves simple toggling logic and can be fully shown here.
+<img width="1052" height="517" alt="image" src="https://github.com/user-attachments/assets/3caedaf9-042b-4212-9a71-a7fc1d9347e7" />
 
-
-
+This subroutine can be briefly described as multiple cascading, latching timers that determine the time it takes for each actuator to energize. Below is a piece of the program, the full program can be obtained above.
+<img width="1053" height="460" alt="image" src="https://github.com/user-attachments/assets/dfc8d7c5-e17b-4df4-a23f-302ea559bb71" />
+|
+|
+|
+|
 <img width="923" height="312" alt="image" src="https://github.com/user-attachments/assets/ece9abe8-a697-4ac3-a526-3d4e534983f5" />
 
 
