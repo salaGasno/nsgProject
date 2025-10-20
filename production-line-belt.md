@@ -49,10 +49,16 @@ The process repeats indefinitely unless a red button is pressed. If this button 
 
 https://github.com/user-attachments/assets/adb6910d-be34-4707-b5a2-671e6af394ea
 
-## State Machine Program Description
+# State Machine Program Description
 
 As this was mainly a programming project, a proper amount of care was put into the state machine's integrity.
-The following describes the state machine sequence, a bonus feature, and . . .
+The following describes the state machine sequence, a few subroutines and a bonus pause feature.
+
+## Finite State Machine
+
+The state machine consists of 9 states it can transition to. Below is a rough sketch of the state diagram.
+<img width="440" height="328" alt="stateDiagram0" src="https://github.com/user-attachments/assets/40aa792d-2a3f-4b7a-9464-d2ab5947cccf" />
+
 
 
 
