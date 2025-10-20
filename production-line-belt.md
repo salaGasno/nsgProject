@@ -92,6 +92,12 @@ This state services the first line of production.
 This state calls two subroutines that energize the box feeder, and the ram system.
 <img width="929" height="116" alt="image" src="https://github.com/user-attachments/assets/5d7b72d2-70c0-4aa2-a917-1d68e0d136bc" />
 <img width="923" height="97" alt="image" src="https://github.com/user-attachments/assets/a174ae15-3dbb-4f8d-b50f-b019a210f4ec" />
+The lineLoad SBR and feederPulse SBRs: [feederPulse_SBR.pdf](https://github.com/user-attachments/files/22994851/feederPulse_SBR.pdf), [lineLoad_SBR.pdf](https://github.com/user-attachments/files/22994860/lineLoad_SBR.pdf).
+
+
+
+
+<img width="923" height="312" alt="image" src="https://github.com/user-attachments/assets/ece9abe8-a697-4ac3-a526-3d4e534983f5" />
 
 
 
