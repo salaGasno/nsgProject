@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/a8249a3a-254c-40e7-ab4d-80ad37c51a1e
 
 ## Line Service
 
-The state machine controls the moving platform depending on a sensory input and feeds boxes in a pre-determined fashion from left to right.
+The state machine controls the pneumatic ram's moving platform depending on a sensory input and feeds boxes in a pre-determined fashion from left to right.
 
 https://github.com/user-attachments/assets/62355579-662a-4570-8a21-ec45b6ff8299
 
