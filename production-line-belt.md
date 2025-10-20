@@ -83,15 +83,16 @@ This state calls two subroutines that energize the box feeder, and the ram syste
 <img width="929" height="116" alt="image" src="https://github.com/user-attachments/assets/5d7b72d2-70c0-4aa2-a917-1d68e0d136bc" />
 <img width="923" height="97" alt="image" src="https://github.com/user-attachments/assets/a174ae15-3dbb-4f8d-b50f-b019a210f4ec" />
 
-The Subroutine involves simple toggling logic and can be fully shown here.
+The feederPulse subroutine involves simple toggling logic and can be fully shown here.
 <img width="1052" height="517" alt="image" src="https://github.com/user-attachments/assets/3caedaf9-042b-4212-9a71-a7fc1d9347e7" />
 
-This subroutine can be briefly described as multiple cascading, latching timers that determine the time it takes for each actuator to energize. Below is a piece of the program, the full program can be obtained above.
+This lineLoad subroutine can be briefly described as multiple cascading, latching timers that determine the time it takes for each actuator to energize. Below is a piece of the program, the full program can be obtained above.
 <img width="1053" height="460" alt="image" src="https://github.com/user-attachments/assets/dfc8d7c5-e17b-4df4-a23f-302ea559bb71" />
-|
-|
-|
-|
+blah
+
+blah
+
+blah
 <img width="923" height="312" alt="image" src="https://github.com/user-attachments/assets/ece9abe8-a697-4ac3-a526-3d4e534983f5" />
 
 
