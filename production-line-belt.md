@@ -47,11 +47,12 @@ This subroutine can be briefly described as multiple cascading, latching timers 
 
 The process repeats indefinitely unless a red button is pressed. If this button is pressed, the line will service all three lines before coming to a soft stop. If the emergency stop is pressed, the e-stop button will need to be unlatched and a button sequence must be executed to resume normal function.
 
-
-
-
 https://github.com/user-attachments/assets/adb6910d-be34-4707-b5a2-671e6af394ea
 
+## State Machine Program Description
+
+As this was mainly a programming project, a proper amount of care was put into the state machine's integrity.
+The following describes the state machine sequence, a bonus feature, and . . .
 
 
 
