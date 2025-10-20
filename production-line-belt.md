@@ -105,4 +105,10 @@ States 4 and 5 are a repeat of the previously discussed state above. However, at
 
 The program will loop from state 3 - 5 if there is no intervention from an operator. If the red pushbutton is pressed, however, a soft stop flag will be set and be held in memory until it is checked once the final output-line is loaded with the predetermined number of boxes.
 
-* 
+* The press of the red pushbutton will issue the soft stop flag in any state that is not the initial idle state.
+<img width="928" height="163" alt="image" src="https://github.com/user-attachments/assets/2ccdd98b-fbe1-4672-8024-b04924a68c51" />
+
+* Once the final state for line-servicing is reached the flag is checked. If false, the next state will be state 3 and the process will restart.
+* If it is true, however, the state will reset back to initialization, state 0.
+<img width="923" height="420" alt="image" src="https://github.com/user-attachments/assets/2516da61-0f40-4308-8a44-eba46cd0307f" />
+
