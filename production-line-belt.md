@@ -1,16 +1,20 @@
 # Production Line Conveyor-belt Introduction
 
-This project consists of a PLC system utilizing a finite state machine (FSM) to control a conveyor-belt and several pneumatic outputs.
+This programming project consists of a PLC system utilizing a finite state machine (FSM) to control a conveyor-belt and several pneumatic outputs.
 
 This project was completed at the Automated Controls Installation and Maintenance program in BCIT during the PLCs course, ACIM-5010.
 
 This course served as an introduction to PLC systems. However, as a Mechatronics Technologist most of the topics covered in this course were known to me. As a result, I had decided to create the following PLC system project utilizing a state machine even though one was not required for the course.
+
+Date completed: September 7th, 2025.
+Project duration: < 1 Month.
 
 ## System Components
 
 This PLC system consists of the following components:
 * 1769-L30 Allen Bradley PLC
 * PowerFlex 70 EC_I
+* Point IO
 * Conveyor Belt System Provided by the ACIM program.
 
 ![ACIM_Setup](https://github.com/user-attachments/assets/7a3474bb-a8ff-4f30-a2b6-0c59f0caaa18)
@@ -40,6 +44,9 @@ The cradle/platform is controlled by yet another subroutine within the state mac
 
 This subroutine can be briefly described as multiple cascading, latching timers that determine the time it takes for each actuator to energize. Below is a piece of the program, the full program can be obtained above.
 <img width="1053" height="460" alt="image" src="https://github.com/user-attachments/assets/dfc8d7c5-e17b-4df4-a23f-302ea559bb71" />
+
+The process repeats indefinitely unless a red button is pressed. If this button is pressed, the line will service all three lines before coming to a soft stop. If the emergency stop is pressed, the e-stop button will need to be unlatched and a button sequence must be executed to resume normal function.
+https://github.com/user-attachments/assets/c9eb5f9b-b58b-4735-9fae-7a7d01cd711a
 
 
 
