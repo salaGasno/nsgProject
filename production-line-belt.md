@@ -6,8 +6,8 @@ This project was completed at the Automated Controls Installation and Maintenanc
 
 This course served as an introduction to PLC systems. However, as a mechatronics technologist, most of the topics covered in this course were known to me. As a result, I had decided to create the following PLC system project utilizing a state machine even though one was not required for the course.
 
-Date completed: September 7th, 2025.
-Project duration: < 1 Month.
+* Date completed: September 7th, 2025.
+* Project duration: < 1 Month.
 
 ## System Components
 
@@ -79,22 +79,30 @@ Once the motor reaches the desired speed, a transition occurs and the green ligh
 
 This state services the first line of production. 
 <img width="1262" height="273" alt="image" src="https://github.com/user-attachments/assets/094c5529-d417-4987-9e2e-e51cf2555ca7" />
-This state calls two subroutines that energize the box feeder, and the pneumatic ram. [feederPulse_SBR.pdf](https://github.com/user-attachments/files/22994851/feederPulse_SBR.pdf), [lineLoad_SBR.pdf](https://github.com/user-attachments/files/22994860/lineLoad_SBR.pdf).
 
+* This state calls two subroutines that energize the box feeder, and the pneumatic ram. [feederPulse_SBR.pdf](https://github.com/user-attachments/files/22994851/feederPulse_SBR.pdf), [lineLoad_SBR.pdf](https://github.com/user-attachments/files/22994860/lineLoad_SBR.pdf).
 <img width="929" height="116" alt="image" src="https://github.com/user-attachments/assets/5d7b72d2-70c0-4aa2-a917-1d68e0d136bc" />
 <img width="923" height="97" alt="image" src="https://github.com/user-attachments/assets/a174ae15-3dbb-4f8d-b50f-b019a210f4ec" />
 
-The feederPulse subroutine involves simple toggling logic and can be fully shown here.
+* The feederPulse subroutine involves simple toggling logic and can be fully shown here. This subroutine is called for every subsequent line-servicing state and will not be mentioned going forward.
 <img width="1052" height="517" alt="image" src="https://github.com/user-attachments/assets/3caedaf9-042b-4212-9a71-a7fc1d9347e7" />
 
-This lineLoad subroutine can be briefly described as multiple cascading, latching timers that determine the time it takes for each actuator to energize. Below is a piece of the program, the full program can be obtained above.
+* The lineLoad subroutine can be briefly described as multiple cascading, latching timers that determine the time it takes for each actuator to energize. Below is a piece of the program, the full program can be obtained above. This subroutine is also called for every subsequent line-servicing state.
 <img width="1053" height="460" alt="image" src="https://github.com/user-attachments/assets/dfc8d7c5-e17b-4df4-a23f-302ea559bb71" />
-blah
 
-blah
-
-blah
+* The state logic counts the amount of times the ram is actuated and considers a box to have been feed to an output line. The preset value was arbitrary in the context of this project. This logic is applied to every subsequent line-servicing state, the only difference being the fact that the pneumatic guide - the output responsible for moving the ram left and right - is set to energize and allow the ram to move where line 1 is located.
 <img width="923" height="312" alt="image" src="https://github.com/user-attachments/assets/ece9abe8-a697-4ac3-a526-3d4e534983f5" />
+* Something worth noting is the use of the transition delay timer (transDelay) used in each line-servicing state. This avoids the ram from energizing more than once in an extremely quickly fashion upon a state transition due to a box being present in front of the sensor responsible for triggering the ram. In short, this delay avoids a loss of control of the pneumatic ram upon exiting a line-servicing state and entering another.
 
+As the line is fully loaded, the counter associated with the line sets its done bit, the non-retentive timer finishes its count and the next state transition occurs.
+<img width="923" height="209" alt="image" src="https://github.com/user-attachments/assets/b6374520-cbda-411a-bab6-2eef34d7f08d" />
 
+## States 4 and 5 - LINE 2 & 3 SERVICE
 
+States 4 and 5 are a repeat of the previously discussed state above. However, at the end of state 5, the system will either stop or continue from state 3 depending on whether the red pushbutton was pressed. More info below.
+
+## Soft stopping
+
+The program will loop from state 3 - 5 if there is no intervention from an operator. If the red pushbutton is pressed, however, a soft stop flag will be set and be held in memory until it is checked once the final output-line is loaded with the predetermined number of boxes.
+
+* 
