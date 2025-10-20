@@ -73,6 +73,11 @@ This state can be exited through the unlatching of the emergency stop button fol
 This state is entered through the first scan status bit and is the starting point of the state machine.
 During this state, the green light flashes to indicate that the system is ready. The state is exited via the press of the green pushbutton.
 
+## State 1 - INITIALIZE
+
+This state resets counters involved with the line servicing function of the program and a timer involved with safely restarting the system after an e-stop. The green light will cease to toggle and will be continuously energized when this state is entered.
+<img width="1057" height="185" alt="image" src="https://github.com/user-attachments/assets/f7b93263-d15f-47e1-92ac-7bf8c3ee8741" />
+
 
 
 
