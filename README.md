@@ -7,4 +7,4 @@ Ranging from microcontroller to PLC systems, this repository provides
 a quick and digestable run-down of the design process and final results.
 
 ## Table of Contents
-- [Production-line Converyor Belt](#production-line-conveyor-belt-introduction)
+- [Production-line Converyor Belt](production-line-belt.md)
