@@ -128,7 +128,13 @@ The pause feature was not a requirement and was included at my leisure. The impl
 
 * Pressing the yellow pushbutton stores the current state in a buffer. Since the counters are not reset, pausing does not affect the counters responsible for keeping track of the output.
 <img width="924" height="261" alt="image" src="https://github.com/user-attachments/assets/5bac4d6c-0fdc-4665-99f6-ce2d6150c60f" />
+* Two states are allocated to this function to ensure resuming is possible only when it is safe to do so.
+<img width="923" height="193" alt="image" src="https://github.com/user-attachments/assets/54b6b097-7755-4b32-b6e8-6a72f8811529" />
+* In the lineLoad subroutine, the state is checked for pause. While the system is paused, the ram should never energize even if a box is present.
+<img width="1054" height="146" alt="image" src="https://github.com/user-attachments/assets/84c1b7d7-2896-4b3d-b898-eeff3124c656" />
+
 
 # Addendum
+
 
 
