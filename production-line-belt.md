@@ -1,3 +1,9 @@
+## Table of Contents
+- [System Components](#system-components)
+- [Project Description](#project-description)
+- [State Machine Program Description](#state-machine-program-description)
+
+
 # Production Line Conveyor-belt Introduction
 
 This programming project consists of a PLC system utilizing a finite state machine (FSM) to control a conveyor-belt and several pneumatic outputs.
