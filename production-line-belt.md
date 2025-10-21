@@ -2,6 +2,8 @@
 - [System Components](#system-components)
 - [Project Description](#project-description)
 - [State Machine Program Description](#state-machine-program-description)
+- [Addendum](#Addendum)
+
 
 
 # Production Line Conveyor-belt Introduction
@@ -127,5 +129,6 @@ The pause feature was not a requirement and was included at my leisure. The impl
 * Pressing the yellow pushbutton stores the current state in a buffer. Since the counters are not reset, pausing does not affect the counters responsible for keeping track of the output.
 <img width="924" height="261" alt="image" src="https://github.com/user-attachments/assets/5bac4d6c-0fdc-4665-99f6-ce2d6150c60f" />
 
+#Addendum
 
 
