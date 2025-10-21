@@ -117,6 +117,7 @@ The program will loop from state 3 - 5 if there is no intervention from an opera
 * Once the final state for line-servicing is reached the flag is checked. If false, the next state will be state 3 and the process will restart.
 * If it is true, however, the state will reset back to idling, state 0.
 <img width="923" height="420" alt="image" src="https://github.com/user-attachments/assets/2516da61-0f40-4308-8a44-eba46cd0307f" />
+
 * Every time State 0 is entered, the soft stop flag is cleared to ensure normal operation.
 <img width="927" height="99" alt="image" src="https://github.com/user-attachments/assets/a368ad00-502b-463e-a9e0-de857256b26f" />
 
@@ -128,8 +129,10 @@ The pause feature was not a requirement and was included at my leisure. The impl
 
 * Pressing the yellow pushbutton stores the current state in a buffer. Since the counters are not reset, pausing does not affect the counters responsible for keeping track of the output.
 <img width="924" height="261" alt="image" src="https://github.com/user-attachments/assets/5bac4d6c-0fdc-4665-99f6-ce2d6150c60f" />
+
 * Two states are allocated to this function to ensure resuming is possible only when it is safe to do so.
 <img width="923" height="193" alt="image" src="https://github.com/user-attachments/assets/54b6b097-7755-4b32-b6e8-6a72f8811529" />
+
 * In the lineLoad subroutine, the state is checked for pause. While the system is paused, the ram should never energize even if a box is present.
 <img width="1054" height="146" alt="image" src="https://github.com/user-attachments/assets/84c1b7d7-2896-4b3d-b898-eeff3124c656" />
 
