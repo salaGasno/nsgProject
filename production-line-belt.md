@@ -2,7 +2,7 @@
 - [System Components](#system-components)
 - [Project Description](#project-description)
 - [State Machine Program Description](#state-machine-program-description)
-- [Addendum](#Addendum)
+- [Addendum](#addendum)
 
 
 
