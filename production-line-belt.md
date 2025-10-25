@@ -99,6 +99,7 @@ This state services the first line of production.
 
 * The state logic counts the amount of times the ram is actuated and considers a box to have been feed to an output line. The preset value was arbitrary in the context of this project. This logic is applied to every subsequent line-servicing state, the only difference being the fact that the pneumatic guide - the output responsible for moving the ram left and right - is set to energize and allow the ram to move where line 1 is located.
 <img width="923" height="312" alt="image" src="https://github.com/user-attachments/assets/ece9abe8-a697-4ac3-a526-3d4e534983f5" />
+
 * Something worth noting is the use of the transition delay timer (transDelay) used in each line-servicing state. This avoids the ram from energizing more than once in an extremely quickly fashion upon a state transition due to a box being present in front of the sensor responsible for triggering the ram. In short, this delay avoids a loss of control of the pneumatic ram upon exiting a line-servicing state and entering another.
 
 As the line is fully loaded, the counter associated with the line sets its done bit, the non-retentive timer finishes its count and the next state transition occurs.
