@@ -2,6 +2,7 @@
 - [System Components](#system-components)
 - [Project Description](#project-description)
 - [State Machine Program Description](#state-machine-program-description)
+- [Safety Considerations](#safety-considerations)
 - [Addendum](#addendum)
 
 
@@ -135,6 +136,25 @@ The pause feature was not a requirement and was included at my leisure. The impl
 
 * In the lineLoad subroutine, the state is checked for pause. While the system is paused, the ram should never energize even if a box is present.
 <img width="1054" height="146" alt="image" src="https://github.com/user-attachments/assets/84c1b7d7-2896-4b3d-b898-eeff3124c656" />
+
+# Safety Considerations
+
+## Redundant Interlocks
+Throughout the state machine there are several interlocking conditions of similar nature.
+<img width="923" height="74" alt="image" src="https://github.com/user-attachments/assets/88b27716-c586-432d-9964-05ea0bde128b" />
+The purpose of these XIO instructions is to avoid accidental progression of the state machine and avoid "button mashing".
+<img width="925" height="86" alt="image" src="https://github.com/user-attachments/assets/9b6e1842-6e5f-4ba0-b900-8f3f770cccb8" />
+In the same manner, any subsequent state is unlikely to trigger through the simultaneous pressing of more than one button.
+This is only a surface-level safety consideration.
+
+## Virtual Tags
+
+Although not shown in the state machine, every field device input and output is digitally buffered in separate subroutines.
+<img width="927" height="149" alt="image" src="https://github.com/user-attachments/assets/0f3f6d1a-5490-4321-8cef-437fe8634f9b" />
+<img width="925" height="101" alt="image" src="https://github.com/user-attachments/assets/eea036da-7aaa-4683-bc1e-9ffe39b8ca74" />
+The subroutines for the input and output buffer routines are placed at the start and end of the main routine which is the state machine in this case. Within is a simple XIC to OTE rung for each field device input or output.
+
+The purpose for these virtual tags are tied to the nature of field device I/O in PLC applications. As I/O is updated asynchronously from the PLC logic, the programmer loses some control over the sequence of events that would normally follow in a traditional program without the optional use of interrupts. The use of virtual I/O allows the programmer to remain in control of when real outputs are energized which so happens to always be at the end of the program, the end of a scan cycle.
 
 
 # Addendum
