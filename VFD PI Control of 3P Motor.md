@@ -1,3 +1,3 @@
-# Contents
+# Table of Contents
 
 # Project Introduction
