@@ -1,4 +1,4 @@
-## Table of Contents
+## Table of Contents - Production Line System
 - [System Components](#system-components)
 - [Project Description](#project-description)
 - [State Machine Program Description](#state-machine-program-description)
