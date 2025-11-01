@@ -15,11 +15,20 @@ This project was completed at the Automated Controls Installation and Maintenanc
 
 This course focused on the application of AC Drives for motor control in industrial applications. Two VFDs were worked with during this course, one being the Altivar 31 VFD. However, the PowerFlex 70 EC_I was used for this project. This VFD's parameters were configured using Connected Components Workbench (CCW).
 
-The Zelio SR3 B261FU, a programmable AC relay, was programmed in ZelioSoft2 software from Schneider Electric. Although not required, the system was programmed in a finite state machine fashion. As the SW and relay were more limited than a traditional PLC system, this presented a couple interesting challenges while developing the state machine and their solutions are worth noting.
+The Zelio SR3 B261FU, a programmable ACDC relay, was programmed in ZelioSoft2 software from Schneider Electric. Although not required, the system was programmed in a finite state machine fashion. As both the SW and relay were more limited than a traditional PLC system, they presented a couple of interesting challenges to overcome while developing the state machine. Their solutions are worth noting.
 
 * Date completed: September 19th, 2025.
 * Project duration: < 1 Month.
 
 ## System Components
 
-As previously mentioned,
+This Control System Consists of:
+* Zelio SR3 B261FU - Programmable Relay
+* PowerFlex 70 EC_I
+* Control Board Provided by ACIM Program
+* Water-tank setup provided by ACIM Program
+* Three-Phase Motor of undocumented make
+
+![ACIM5040_Project_OneFrame](https://github.com/user-attachments/assets/71f662bb-c30e-4968-87a0-921fb1805e29)
+
+  
