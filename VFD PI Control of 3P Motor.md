@@ -24,11 +24,16 @@ The Zelio SR3 B261FU, a programmable ACDC relay, was programmed in ZelioSoft2 so
 
 This Control System Consists of:
 * Zelio SR3 B261FU - Programmable Relay
-* PowerFlex 70 EC_I
-* Control Board Provided by ACIM Program
+* PowerFlex 70 EC_I - Variable Frequency Drive
+* I/O Board Provided by ACIM Program
 * Water-tank setup provided by ACIM Program
+* DS Ultrasonic liquid level sensor
 * Three-Phase Motor of undocumented make
 
 ![ACIM5040_Project_OneFrame](https://github.com/user-attachments/assets/71f662bb-c30e-4968-87a0-921fb1805e29)
+
+# Project Description
+
+The control system will receive an input through a VFD parameter
 
   
