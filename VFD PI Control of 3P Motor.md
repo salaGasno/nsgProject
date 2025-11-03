@@ -46,6 +46,9 @@ When in the Hand position, the VFD will apply voltage to the motor at a fixed fr
 
 # State Machine Program Description
 
+The ladder logic document can be found here: [PIpumpCtrlFSM_NoahSG.pdf](https://github.com/user-attachments/files/23294503/PIpumpCtrlFSM_NoahSG.pdf)
+
+
 While the application is rather straight-forward, the design process was far more interesting.
 
 The Zelio SR3 programmable relay paired with ZelioSoft2 approximates the programming environment for a PLC in ladder logic.
@@ -57,6 +60,10 @@ In a finite state machine that would be programmed in a platform like Rockwell's
 
 Below is a simplified state diagram of the entire control system.
 ![programmable-relay-fsm-diagram](https://github.com/user-attachments/assets/21cb06c4-bfab-4617-b6e9-dc95a5eb644e)
+
+As you can see, S:FS is used as the entry point for the very first state in this particular FSM. However, the programmable relay, along with ZelioSoft2, are incapable of providing a flag indicating that the first scan is being performed. The programmable relay is analog in its entirety.
+
+However, the first scan bit can be simulated, and after a few attempts at replicating it with one shot instructions and strategically placed OTEs, the final solution was much more simple and did not require any extra steps.
 
 
 
