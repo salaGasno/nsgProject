@@ -71,6 +71,12 @@ Below is the very first rung of the program and the very last.
 <img width="770" height="207" alt="image" src="https://github.com/user-attachments/assets/c88ed956-23d2-40f9-8687-c1026d7ea867" />
 <img width="993" height="73" alt="image" src="https://github.com/user-attachments/assets/f74d7f44-a737-456b-84dd-60aec9940044" />
 
+The effective S:FS is a simple OTE at the end of the program.
+
+Another limitation is the hard-limit on XIO/XIC instruction you may insert in a single rung branch. The limit is set to five examine instructions followed by the OTE instruction. This, for the most part, was not an issue. However, this somewhat negatively impacts the transition to a fault state.
+
+<img width="748" height="143" alt="image" src="https://github.com/user-attachments/assets/84314e20-00fe-4e61-80ca-282bf9ad1e91" />
+
 
 
 
