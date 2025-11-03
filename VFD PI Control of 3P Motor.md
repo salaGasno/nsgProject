@@ -77,7 +77,7 @@ Another limitation is the hard-limit on XIO/XIC instruction you may insert in a 
 
 As a fault state is entered, this entry should act as an interlock with the energization of State 3: Pump Control. As a result, during a fault, the state is entered but is not latched due to the compromise of placing the XIC for the fault state on the latching branch.
 
-In short, the State99_FAULT XIC should be in line 16 rather than 17. Due to this difference, the fault state will not prevent State 3 from being briefly entered during a fault, but it will be prevented from latching altogether. This means the OTE could be potentially energized at a rate determined by the scan speed and program length, but whether this causes any significant safety issues or not was not discovered.
+In short, the State99_FAULT XIO should be in line 16 rather than 17. Due to this difference, the fault state will not prevent State 3 from being briefly entered during a fault, but it will be prevented from latching altogether. This means the OTE could be potentially energized at a rate determined by the scan speed and program length, but whether this causes any significant safety issues or not was not discovered.
 
 <img width="748" height="143" alt="image" src="https://github.com/user-attachments/assets/84314e20-00fe-4e61-80ca-282bf9ad1e91" />
 
