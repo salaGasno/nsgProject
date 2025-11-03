@@ -34,6 +34,18 @@ This Control System Consists of:
 
 # Project Description
 
-The control system will receive an input through a VFD parameter
+With a Hand Off Auto switch on the auto position and the press of the start button, the VFD will apply voltage to the three-phase motor.
+
+https://github.com/user-attachments/assets/87421e79-2719-43cb-8363-aa2508d682c1
+
+The control system will read a VFD parameter entered through either HIM on the PowerFlex or through Connected Components Workbench. Once the proper interlocks are set, the VFD will apply voltage to the three-phase motor in a closed loop with the water level in the container. In the example below, the desired level is set to 60% of the calibrated sensor range.
+
+https://github.com/user-attachments/assets/69067365-d887-4d36-aa55-0d5e4b9fc9ac
+
+
+
+
+
+
 
   
