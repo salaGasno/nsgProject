@@ -42,6 +42,25 @@ The control system will read a VFD parameter entered through either HIM on the P
 
 https://github.com/user-attachments/assets/69067365-d887-4d36-aa55-0d5e4b9fc9ac
 
+When in the Hand position, the VFD will apply voltage to the motor at a fixed frequency indefinitely unless the E-Stop button is pressed, or the HOA is returned to the Off or inactive position.
+
+# State Machine Program Description
+
+While the application is rather straight-forward, the design process was far more interesting.
+
+The Zelio SR3 programmable relay paired with ZelioSoft2 approximates the programming environment for a PLC in ladder logic.
+However, this comes with its quirks and limitations.
+
+![schneider-programmable-relay](https://github.com/user-attachments/assets/291d2a13-5f05-43aa-abde-59457d1fdf03)
+
+In a finite state machine that would be programmed in a platform like Rockwell's Allen Bradley's PLCs, you will normally have access to some CPU status registers such as S:FS, the first scan bit. This would be used as the only entry point for the first state in the sequence.
+
+Below is a simplified state diagram of the entire control system.
+<img width="958" height="602" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/cb38bafa-1789-43c3-91d4-456205c3abac" />
+
+
+
+
 
 
 
