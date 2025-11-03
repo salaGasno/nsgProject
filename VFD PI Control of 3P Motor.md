@@ -56,7 +56,8 @@ However, this comes with its quirks and limitations.
 In a finite state machine that would be programmed in a platform like Rockwell's Allen Bradley's PLCs, you will normally have access to some CPU status registers such as S:FS, the first scan bit. This would be used as the only entry point for the first state in the sequence.
 
 Below is a simplified state diagram of the entire control system.
-<img width="958" height="602" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/cb38bafa-1789-43c3-91d4-456205c3abac" />
+![programmable-relay-fsm-diagram](https://github.com/user-attachments/assets/21cb06c4-bfab-4617-b6e9-dc95a5eb644e)
+
 
 
 
