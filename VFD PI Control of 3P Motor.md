@@ -66,7 +66,11 @@ As you can see, S:FS is used as the entry point for the very first state in this
 
 However, the first scan bit can be simulated, and after a few attempts at replicating it with one shot instructions and strategically placed OTEs, the final solution was much more simple and did not require any extra steps.
 
+Below is the very first rung of the program and the very last.
+
 <img width="770" height="207" alt="image" src="https://github.com/user-attachments/assets/c88ed956-23d2-40f9-8687-c1026d7ea867" />
+<img width="993" height="73" alt="image" src="https://github.com/user-attachments/assets/f74d7f44-a737-456b-84dd-60aec9940044" />
+
 
 
 
