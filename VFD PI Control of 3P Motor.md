@@ -59,11 +59,15 @@ However, this comes with its quirks and limitations.
 In a finite state machine that would be programmed in a platform like Rockwell's Allen Bradley's PLCs, you will normally have access to some CPU status registers such as S:FS, the first scan bit. This would be used as the only entry point for the first state in the sequence.
 
 Below is a simplified state diagram of the entire control system.
+
 ![programmable-relay-fsm-diagram](https://github.com/user-attachments/assets/21cb06c4-bfab-4617-b6e9-dc95a5eb644e)
 
 As you can see, S:FS is used as the entry point for the very first state in this particular FSM. However, the programmable relay, along with ZelioSoft2, are incapable of providing a flag indicating that the first scan is being performed. The programmable relay is analog in its entirety.
 
 However, the first scan bit can be simulated, and after a few attempts at replicating it with one shot instructions and strategically placed OTEs, the final solution was much more simple and did not require any extra steps.
+
+<img width="770" height="207" alt="image" src="https://github.com/user-attachments/assets/c88ed956-23d2-40f9-8687-c1026d7ea867" />
+
 
 
 
