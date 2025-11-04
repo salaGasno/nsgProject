@@ -1,4 +1,4 @@
-## Table of Contents - Production Line System
+## Table of Contents - Production Line Control System
 - [System Components](#system-components)
 - [Project Description](#project-description)
 - [State Machine Program Description](#state-machine-program-description)
