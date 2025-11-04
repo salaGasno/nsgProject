@@ -160,5 +160,5 @@ The purpose for these virtual tags are tied to the nature of field device I/O in
 
 # Addendum
 
-
+All in all, this project reinforced skills in PLC programming through advanced state machines.
 
