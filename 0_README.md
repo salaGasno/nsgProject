@@ -11,5 +11,5 @@ a quick and digestable run-down of the design process and final results.
 
 ## Automation
 - [Production-line Control System](Production_Line_Ctrl_System.md)
-- [VFD PI Control of 3P Motor](VFD_PI_Control_of_3P_Motor.md)
+- [VFD PI Control of 3P Motor](VFD_PI_Control_of_Three-phase_Motor.md)
 
