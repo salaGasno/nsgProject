@@ -7,6 +7,6 @@ Ranging from microcontroller to PLC systems, this repository provides
 a quick and digestable run-down of the design process and final results.
 
 ## Table of Contents
-- [Production-line System](production-line-system.md)
-- [VFD PI Control of 3P Motor](VFD%20PI%20Control%20of%203P%20Motor.md)
+- [Production-line System](Production_Line_Ctrl_System.md)
+- [VFD PI Control of 3P Motor](VFD_PI_Control_of_3P_Motor.md)
 
