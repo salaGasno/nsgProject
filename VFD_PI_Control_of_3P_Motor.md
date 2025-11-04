@@ -44,6 +44,8 @@ https://github.com/user-attachments/assets/69067365-d887-4d36-aa55-0d5e4b9fc9ac
 
 When in the Hand position, the VFD will apply voltage to the motor at a fixed frequency indefinitely unless the E-Stop button is pressed, or the HOA is returned to the Off or inactive position.
 
+The system can freely toggle between manual and automatic control of the water level. The system can enter manual mode freely as the HOA is set to the Hand position, while entering automatic control mode requires the HOA to be set to the Auto position and for the green button to be pressed.
+
 # State Machine Program Description
 
 The ladder logic document can be found here: [PIpumpCtrlFSM_NoahSG.pdf](https://github.com/user-attachments/files/23294503/PIpumpCtrlFSM_NoahSG.pdf)
