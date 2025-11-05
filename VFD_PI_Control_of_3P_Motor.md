@@ -1,7 +1,7 @@
 ## Table of Contents - VFD PI Control of 3-Phase Motor
 - [System Components](#system-components)
 - [Project Description](#project-description)
-- [State Machine Program Description](#state-machine-program-description)
+- [State Machine Program Description & Wiring](#state-machine-program-description-&-wiring)
 - [Safety Considerations](#safety-considerations)
 - [Addendum](#addendum)
 
@@ -46,7 +46,7 @@ When in the Hand position, the VFD will apply voltage to the motor at a fixed fr
 
 The system can freely toggle between manual and automatic control of the water level. The system can enter manual mode freely as the HOA is set to the Hand position, while entering automatic control mode requires the HOA to be set to the Auto position and for the green button to be pressed.
 
-# State Machine Program Description
+# State Machine Program Description & Wiring
 
 The ladder logic document can be found here: [PIpumpCtrlFSM_NoahSG.pdf](https://github.com/user-attachments/files/23294503/PIpumpCtrlFSM_NoahSG.pdf)
 
@@ -82,6 +82,7 @@ As a fault state is entered, this entry should act as an interlock with the ener
 In short, the State99_FAULT XIO should be in line 16 rather than 17. Due to this difference, the fault state will not prevent State 3 from being briefly entered during a fault, but it will be prevented from latching altogether. This means the OTE could be potentially energized at a rate determined by the scan speed and program length, but whether this causes any significant safety issues or not was not discovered.
 
 <img width="748" height="143" alt="image" src="https://github.com/user-attachments/assets/84314e20-00fe-4e61-80ca-282bf9ad1e91" />
+
 
 ![noahSalazarG_projectSchematic](https://github.com/user-attachments/assets/e5421771-ba66-434b-81d2-cfd4f4ceca9f)
 
