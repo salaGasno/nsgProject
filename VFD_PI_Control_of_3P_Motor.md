@@ -89,14 +89,15 @@ The wiring schematic is shown below, created in draw.io
 
 ![noahSalazarG_projectSchematic](https://github.com/user-attachments/assets/e5421771-ba66-434b-81d2-cfd4f4ceca9f)
 
+# Safety Considerations
 
+When the E-Stop is pressed, the Emergency state is entered. This state uses DC injection braking for a quicker stopping motion.
 
+<img width="704" height="393" alt="image" src="https://github.com/user-attachments/assets/a1bf188d-0d8b-4e72-a380-601042793087" />
 
+This is achieved by sending a control signal to the VFD which enables the braking method.
 
+<img width="930" height="66" alt="image" src="https://github.com/user-attachments/assets/8557a742-9124-4edf-b1d0-52792c45e469" />
 
-
-
-
-
-
-  
+The placement of this rung is specifically above the rung containing the OTE for the stop command, which is active low. This is to ensure that the braking method is registered long before the stop is issued.
+If a soft-stop is issued by pressing the red button, a roll braking method is issued.
