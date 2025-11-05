@@ -83,6 +83,9 @@ In short, the State99_FAULT XIO should be in line 16 rather than 17. Due to this
 
 <img width="748" height="143" alt="image" src="https://github.com/user-attachments/assets/84314e20-00fe-4e61-80ca-282bf9ad1e91" />
 
+## Wiring
+
+The wiring schematic is shown below, created in draw.io
 
 ![noahSalazarG_projectSchematic](https://github.com/user-attachments/assets/e5421771-ba66-434b-81d2-cfd4f4ceca9f)
 
