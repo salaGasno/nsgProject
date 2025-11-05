@@ -101,3 +101,5 @@ This is achieved by sending a control signal to the VFD which enables the brakin
 
 The placement of this rung is specifically above the rung containing the OTE for the stop command, which is active low. This is to ensure that the braking method is registered long before the stop is issued.
 If a soft-stop is issued by pressing the red button, a roll braking method is issued.
+
+# Addendum
